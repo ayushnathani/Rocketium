@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Sighting</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    
+    <h1> Bird Sighting App </h1><br><br>
+    <table>
+      <tr>  
+     <th>Bird Species</th>   
+    <th>Bird Sightings</th>
+      </tr>
+      <tr>
+       <td> <form method="POST" action="/add-species">
+           <table>
+               <tr>
+                   <td><label>Name</label></td>
+                   <td><input type= "text" name = 'name'></td>
+                </tr>
+                <tr>
+                    <td><label>Size</label></td>
+                    <td><input type= "text" name= 'size' ></td>
+                 </tr>
+                 <tr>
+                    <td><label>Color</label></td>
+                    <td><input type= "text" name = 'color'></td>
+                 </tr>
+                 <tr>
+                    <td><label>Weight</label></td>
+                    <td><input type= "text" name = 'Weight' ></td>
+                 </tr>
+            </table>
+           
+            
+            <input type = "submit" value = 'Add'/> 
+        </form>
+            <input type = "button" value = 'Update' />
+          <a href="/view-species" ><input type = "button" value = 'View All' /></a>
+                
+       
+       </td>
+       <td> <form>
+        <table>
+            <tr>
+                <td><label>Bird Species</label></td>
+                <td><input type= "text" ></td>
+             </tr>
+             <tr>
+                 <td><label>Date-time of sighting</label></td>
+                 <td><input type= "text" ></td>
+              </tr>
+              <tr>
+                 <td><label>location of sighting</label></td>
+                 <td><input type= "text" ></td>
+              </tr>
+              
+         </table>  
+        
+        <input type = "button" value = 'Add'/>
+        <input type = "button" value = 'Update'/>
+        <input type = "button" value = 'View All'/>
+            
+    </form>
+   </td>
+      </tr>
+    
+    </table>
+
+    <div class = "Bird species">
+
+    </div>
+    <div class="Bird sightings">
+
+    </div>
+</body>
+</html>
